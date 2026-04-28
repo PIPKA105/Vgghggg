@@ -1,0 +1,26 @@
+{
+  "name": "ABOBA GHOST",
+  "dns": {
+    "servers": [
+      "1.2.16.2",
+      "8.8.8.8"
+    ]
+  },
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "tag": "direct"
+    }
+  ],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "1.2.16.2"
+        ],
+        "outboundTag": "direct"
+      }
+    ]
+  }
+}
